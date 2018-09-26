@@ -1,0 +1,25 @@
+{
+    "name": "node-link/cakephp-git-deploy",
+    "description": "Plugin to operate automatic git-pull server with CakePHP 3 (Using WebHook from GitHub, GitLab and Bitbucket)",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "git", "deploy", "webhook"],
+    "homepage": "https://github.com/node-link/cakephp-git-deploy",
+    "license": "MIT",
+    "require": {
+        "cakephp/cakephp": "^3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7.14|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NodeLink\\GitDeploy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NodeLink\\GitDeploy\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}
